@@ -10,6 +10,7 @@ function init() {
     allLetters.forEach(letter => {
         letter.remove();
     });
+    document.querySelector('.answer').innerHTML = '';
     newGameBtn.style.opacity = '0';
     newGameBtn.style.pointerEvents = 'none';
 
