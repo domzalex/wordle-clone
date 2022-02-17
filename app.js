@@ -80,7 +80,7 @@ function init() {
         let comparisons = 0;
         if (guessedWord == word) {
             document.querySelector('.answer').innerHTML = 'Congratulations! You won!!';
-            document.querySelector('.answer').style.color = 'green';
+            document.querySelector('.answer').style.color = '#538d4e';
             newGameBtn.style.opacity = '1';
             newGameBtn.style.pointerEvents = 'all';
         }
@@ -93,11 +93,11 @@ function init() {
         for (i = 0; i < word.length; i++) {
             if (guessedWord.charAt(i) == word.charAt(i)) {
                 comparisons++;
-                letterGroup[(i + multiplier)].style.backgroundColor = 'green';
+                letterGroup[(i + multiplier)].style.backgroundColor = '#538d4e';
             } else if ((guessedWord.charAt(i) != word.charAt(i)) && (word.includes(guessedWord.charAt(i)))) {
-                letterGroup[(i + multiplier)].style.backgroundColor = 'orange';
+                letterGroup[(i + multiplier)].style.backgroundColor = '#b59f3b';
             } else if (guessedWord.charAt(i) != word.charAt(i)) {
-                letterGroup[(i + multiplier)].style.backgroundColor = 'darkslategrey';
+                letterGroup[(i + multiplier)].style.backgroundColor = '#3a3a3c';
             }
         }
         guessedWord = '';
