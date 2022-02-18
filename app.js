@@ -19,7 +19,7 @@ function init() {
 
     const word = wordList[Math.floor(Math.random()*wordList.length)];
     let guessedWord = '';
-    console.log(word);
+    // console.log(word);
     var index = 0;
     var count = 1;
     var submittable = 0; //if a row is filled, will toggle and disallow more characters to be added (user HAS to either submit the word or backspace)
@@ -77,7 +77,6 @@ function init() {
                 index = index;
             }
         }
-        console.log(keycode)
     }
 
 
